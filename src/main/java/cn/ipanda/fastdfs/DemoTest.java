@@ -13,6 +13,7 @@ public class DemoTest {
             String[] strings = storageClient.upload_file("C:\\Users\\Administrator\\Desktop\\fastdfsjpa\\panda.png", "jpg",
                     null);                                                                                         //6、使用 StorageClient 对象上传图片。扩展名不带“.”
             for (String string : strings) {                                                                                  //7、返回数组。包含组名和图片的路径。
+                //http://192.168.0.121/group1/M00/00/01/wKgAeVzidZqABLPfAALCE7u1duU085.jpg
                 System.out.println(string);
             }
         } catch (IOException e) {
